@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            //var bot = ['Rock', 'Paper', 'Scissors'];
+            //var bot_choice = bot[Math.ceil(Math.random()*2)];
+            //var choice1 = document.getElementById("choice1").innerHTML;
+            //var choice2 = document.getElementById("choice2").innerHTML;
+            function playRock() {
+                var bot = ['ROCK', 'PAPER', 'SCISSORS'];
+                document.getElementById("choice1").innerHTML = document.getElementById("rock").innerHTML;
+                document.getElementById("choice2").innerHTML = bot[Math.floor(Math.random()*3)];
+                if(document.getElementById("choice1").innerHTML == document.getElementById("choice2").innerHTML) {
+                    document.getElementById("statement").innerHTML = "DRAW!";
+                } else if(document.getElementById("choice2").innerHTML == document.getElementById("paper").innerHTML) {
+                    document.getElementById("statement").innerHTML = "YOU LOST!";
+                } else if(document.getElementById("choice2").innerHTML == document.getElementById("scissors").innerHTML) {
+                    document.getElementById("statement").innerHTML = "YOU WON!";
+                }
+            }
+            function playPaper() {
+                var bot = ['ROCK', 'PAPER', 'SCISSORS'];
+                document.getElementById("choice1").innerHTML = document.getElementById("paper").innerHTML;
+                document.getElementById("choice2").innerHTML = bot[Math.floor(Math.random()*3)];
+                if(document.getElementById("choice1").innerHTML == document.getElementById("choice2").innerHTML) {
+                    document.getElementById("statement").innerHTML = "DRAW!";
+                } else if(document.getElementById("choice2").innerHTML == document.getElementById("scissors").innerHTML) {
+                    document.getElementById("statement").innerHTML = "YOU LOST!";
+                } else if(document.getElementById("choice2").innerHTML == document.getElementById("rock").innerHTML) {
+                    document.getElementById("statement").innerHTML = "YOU WON!";
+                }
+            }
+            function playScissors() {
+                var bot = ['ROCK', 'PAPER', 'SCISSORS'];
+                document.getElementById("choice1").innerHTML = document.getElementById("scissors").innerHTML;
+                document.getElementById("choice2").innerHTML = bot[Math.floor(Math.random()*3)];
+                if(document.getElementById("choice1").innerHTML == document.getElementById("choice2").innerHTML) {
+                    document.getElementById("statement").innerHTML = "DRAW!";
+                } else if(document.getElementById("choice2").innerHTML == document.getElementById("rock").innerHTML) {
+                    document.getElementById("statement").innerHTML = "YOU LOST!";
+                } else if(document.getElementById("choice2").innerHTML == document.getElementById("paper").innerHTML) {
+                    document.getElementById("statement").innerHTML = "YOU WON!";
+                }
+            }
+        </script>
+        <style>
+            table, tr, th, td{
+                border: 2px solid white;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            table {
+                margin: auto;
+                width: 50%;
+            }
+            button {
+                width: 100px;
+                margin-top: 10px;
+                border: none;
+            }
+            p {
+                margin-bottom: 1px;
+            }
+            body {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(130, 214, 130);
+            }
+            #rock {
+                background-color: grey;
+                border-radius: 8px;
+                color: white;
+                transition: border-radius 500ms, background-color 500ms, color 500ms;
+            }
+            #paper {
+                background-color: white;
+                border-radius: 8px;
+                transition: border-radius 500ms, background-color 500ms, color 500ms;
+            }
+            #scissors {
+                background-color: red;
+                color: white;
+                border-radius: 8px;
+                transition: border-radius 500ms, background-color 500ms, color 500ms;
+            }
+            #rock:hover {
+                background-color: white;
+                color: grey;
+                border-radius: 3px;
+            }
+            #paper:hover {
+                background-color: black;
+                color: white;
+                border-radius: 3px;
+            }
+            #scissors:hover {
+                background-color: white;
+                color: red;
+                border-radius: 3px;
+            }
+            hr {
+                margin-bottom: 25px;
+            }
+            header {
+                background-color: rgba(4, 187, 4, 0.5);
+                color: white;
+                padding: 10px 0px 0px 0px;
+                margin: 1px;
+            }
+            label {
+                position: relative;
+                top: 6px;
+                font-weight: bold;
+            }
+            .game {
+                text-align: center;
+            }
+            .result {
+                color: white;
+                background-color: rgba(0, 128, 0, 0.384);
+                height: 50px;
+                margin: auto;
+                width: 50%;
+            }
+            #statement {
+                position: relative;
+                top: 17px;
+            }
+        </style>
+        <title>Rock, Paper, Scissors</title>
+    </head>
+    <body>
+        <header class="title">
+            <h1>Rock, Paper, Scissors</h1>
+            <hr>
+        </header>
+        <div class="game">
+            <table>
+                <tr>
+                    <th>You</th>
+                    <th>Bot</th>
+                </tr>
+                <tr>
+                    <td id="choice1"></td>
+                    <td id="choice2"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="result">
+            <p id="statement">...</p>
+        </div>
+        <div class="choices">
+            <label>Choose:</label><br>
+            <button id="rock" onclick="playRock()">ROCK</button><br>
+            <button id="paper" onclick="playPaper()">PAPER</button><br>
+            <button id="scissors" onclick="playScissors()">SCISSORS</button>
+        </div>
+    </body>
+</html

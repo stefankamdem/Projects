@@ -6,6 +6,7 @@ export default function Home() {
       <header className="w-full p-4 bg-gray-800 text-white flex justify-center gap-8">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </header>
@@ -21,9 +22,25 @@ export default function Home() {
           <p>I'm a 2nd-year CS student interested in full-stack development and AI. I enjoy building small projects and learning new technologies.</p>
         </section>
 
+        <section id="skills" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-2">Technical Skills</h2>
+          <ul className="list-disc ml-5">
+            <li>Python</li>
+            <li>JavaScript (including HTML & CSS)</li>
+            <li>Java</li>
+            <li>Node.js</li>
+            <li>Linux</li>
+            <li>Git</li>
+          </ul>
+        </section>
+
         <section id="projects" className="mb-16">
           <h2 className="text-2xl font-semibold mb-2">Projects</h2>
           <ul className="list-disc ml-5">
+            <li>Redis Database</li>
+            <li>Rock Paper Scissors Game</li>
+            <li>Game (coming soon)</li>
+            <li>AI (coming soon)</li>
             <li>CLI Tool (coming soon)</li>
             <li>Web App (coming soon)</li>
           </ul>
@@ -31,13 +48,14 @@ export default function Home() {
 
         <section id="contact">
           <h2 className="text-2xl font-semibold mb-2">Contact</h2>
-          <p>Email: your.email@example.com</p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" className="text-blue-600">linkedin.com/in/yourprofile</a></p>
+          <p>Email: stefankamdem@gmail.com</p>
+          <p>GitHub: <a href="https://github.com/stefankamdem" className="text-blue-600">github.com/stefankamdem</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/stefan-kamdem-3231481b7/" className="text-blue-600">linkedin.com/in/stefan-kamdem</a></p>
         </section>
       </main>
 
       <footer className="w-full p-4 text-center border-t">
-        © 2025 Your Name
+        © 2025 Stefan Kamdem
       </footer>
     </div>
   )

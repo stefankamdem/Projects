@@ -19,7 +19,7 @@ export default function Home() {
 
         <section id="about" className="mb-16">
           <h2 className="text-2xl font-semibold mb-2">About Me</h2>
-          <p>{"I'm a 2nd-year CS student interested in full-stack development and AI. I enjoy building small projects and learning new technologies."}</p>
+          <p>I&apos;m a 2nd-year CS student interested in full-stack development and AI. I enjoy building small projects and learning new technologies.</p>
         </section>
 
         <section id="skills" className="mb-16">

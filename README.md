@@ -6,4 +6,4 @@ A personal portfolio website built with Next.js and Tailwind CSS.
 Next.js, Tailwind CSS, Vercel
 
 ## Live
-https://my-portfolio.vercel.app
+https://portfolio-2c6u.vercel.app/

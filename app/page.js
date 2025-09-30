@@ -37,12 +37,12 @@ export default function Home() {
         <section id="projects" className="mb-16">
           <h2 className="text-2xl font-semibold mb-2">Projects</h2>
           <ul className="list-disc ml-5">
-            <li>Redis Database</li>
-            <li>Rock Paper Scissors Game</li>
+            <li>Redis Database (Python)</li>
+            <li>Rock Paper Scissors Game(HTML, CSS, JavaScript)</li>
+            <li>Portfolio (HTML, JavaScript, Node.js, TailwindCSS)</li>
             <li>Game (coming soon)</li>
             <li>AI (coming soon)</li>
             <li>CLI Tool (coming soon)</li>
-            <li>Web App (coming soon)</li>
           </ul>
         </section>
 

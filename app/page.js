@@ -38,11 +38,9 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-2">Projects</h2>
           <ul className="list-disc ml-5">
             <li>Redis Database (Python)</li>
-            <li>Rock Paper Scissors Game(HTML, CSS, JavaScript)</li>
-            <li>Portfolio (HTML, JavaScript, Node.js, TailwindCSS)</li>
+            <li><a href="github.com/stefankamdem/todo-cli.git">To-Do List(Python)</a></li>
             <li>Game (coming soon)</li>
             <li>AI (coming soon)</li>
-            <li>CLI Tool (coming soon)</li>
           </ul>
         </section>
 

@@ -40,9 +40,7 @@ export default function Home() {
             <li>Redis Database (Python)</li>
             <li>
               <a href="https://github.com/stefankamdem/todo-cli">To-Do List CLI</a>
-              <ul>
-                <li>A Python command-line to-do app using JSON for storage and Rich for UI formatting</li>
-              </ul>
+              <p>A Python command-line to-do app using JSON for storage and Rich for UI formatting</p>
             </li>
             <li>Game (coming soon)</li>
             <li>AI (coming soon)</li>

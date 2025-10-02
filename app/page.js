@@ -38,7 +38,12 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-2">Projects</h2>
           <ul className="list-disc ml-5">
             <li>Redis Database (Python)</li>
-            <li><a href="https://github.com/stefankamdem/todo-cli">To-Do List(Python)</a></li>
+            <li>
+              <a href="https://github.com/stefankamdem/todo-cli">To-Do List CLI</a>
+              <ul>
+                <li>A Python command-line to-do app using JSON for storage and Rich for UI formatting</li>
+              </ul>
+            </li>
             <li>Game (coming soon)</li>
             <li>AI (coming soon)</li>
           </ul>
